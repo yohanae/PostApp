@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
         
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if error != nil{
-                //this is where we'll write our error alert
+                self.showAlert(Title: "Error", Message: "Something went wrong. Please check your Network and or the email and password you used and try again")
                 return
             }
             
@@ -49,6 +49,14 @@ class LoginViewController: UIViewController {
     }
     
 
+    func showAlert(Title: String, Message: String) {
+        
+        let alert = UIAlertController(title: Title, message: Message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
         let forgotPasswordVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "forgotPasswordVC")as! ForgotPasswordViewController

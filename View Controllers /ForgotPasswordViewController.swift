@@ -26,15 +26,23 @@ class ForgotPasswordViewController: UIViewController {
         
         Auth.auth().sendPasswordReset(withEmail: email)  { (error) in
             if error != nil {
-                //this is where we will add our error alert
+                self.showAlert(Title: "Error", Message: "There seems to be something wrong with the Email Address you entered. Please try again")
                 return
             } else if error == nil {
-                //this is where we will add our success alert
+                self.showAlert(Title: "Sent!", Message: "An email has been sent to the address you provided")
             }
         }
     }
     
 
+    func showAlert(Title: String, Message: String) {
+        
+        let alert = UIAlertController(title: Title, message: Message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
     
     @IBAction func backButton(_ sender: Any) {
         let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC")as! LoginViewController

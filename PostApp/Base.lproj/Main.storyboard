@@ -206,35 +206,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJy-oz-dhS">
-                                <rect key="frame" x="75" y="143" width="225" height="63"/>
+                                <rect key="frame" x="75" y="71" width="225" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2as-pb-wPQ">
-                                <rect key="frame" x="59" y="236" width="256" height="30"/>
+                                <rect key="frame" x="59" y="289" width="256" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Avl-oE-Tew">
-                                <rect key="frame" x="59" y="298" width="256" height="30"/>
+                                <rect key="frame" x="59" y="345" width="256" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-s8-S8X">
-                                <rect key="frame" x="59" y="363" width="256" height="30"/>
+                                <rect key="frame" x="59" y="393" width="256" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6v-gb-sPq">
-                                <rect key="frame" x="110" y="426" width="154" height="34"/>
+                                <rect key="frame" x="110" y="449" width="154" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.31096500323381404" blue="0.82537070356018183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
@@ -245,8 +245,12 @@
                                     <action selector="signupButton:" destination="kyk-Sb-y06" eventType="touchUpInside" id="GBm-pN-lKI"/>
                                 </connections>
                             </button>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImagePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="bPi-OP-eWy">
+                                <rect key="frame" x="67" y="142" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2e9-8a-zez">
-                                <rect key="frame" x="17" y="24" width="44" height="36"/>
+                                <rect key="frame" x="23" y="36" width="44" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back">
@@ -263,6 +267,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="Avl-oE-Tew" id="G5m-CK-h2s"/>
                         <outlet property="passwordTextfield" destination="MLb-s8-S8X" id="BYS-Gm-bKX"/>
+                        <outlet property="profilePictureImage" destination="bPi-OP-eWy" id="0iz-9Y-peh"/>
                         <outlet property="usernameTextfield" destination="2as-pb-wPQ" id="DlW-c3-vVK"/>
                     </connections>
                 </viewController>
@@ -307,4 +312,7 @@
             <point key="canvasLocation" x="664.79999999999995" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profileImagePlaceholder" width="512" height="512"/>
+    </resources>
 </document>
