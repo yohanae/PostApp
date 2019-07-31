@@ -41,11 +41,7 @@ class LoginViewController: UIViewController {
     
     
     func goToHomePage() {
-        let homePageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homePageVC")as! HomePageViewController
-        self.addChild(homePageVC)
-        homePageVC.view.frame = self.view.frame
-        self.view.addSubview(homePageVC.view)
-        homePageVC.didMove(toParent: self)
+         ProgramaticSegueways.segueTo(currentViewController: self, destinationViewController: "tabBarController")
     }
     
 
@@ -59,20 +55,12 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
-        let forgotPasswordVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "forgotPasswordVC")as! ForgotPasswordViewController
-        self.addChild(forgotPasswordVC)
-        forgotPasswordVC.view.frame = self.view.frame
-        self.view.addSubview(forgotPasswordVC.view)
-        forgotPasswordVC.didMove(toParent: self)
+        ProgramaticSegueways.segueTo(currentViewController: self, destinationViewController: "forgotPasswordVC")
     }
     
     
     @IBAction func backButton(_ sender: Any) {
-        let signupOrLoginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signupOrLoginVC")as! SignUpOrLoginViewController
-        self.addChild(signupOrLoginVC)
-        signupOrLoginVC.view.frame = self.view.frame
-        self.view.addSubview(signupOrLoginVC.view)
-        signupOrLoginVC.didMove(toParent: self)
+       ProgramaticSegueways.segueTo(currentViewController: self, destinationViewController: "signupOrLoginVC")
         
     }
     

@@ -17,20 +17,12 @@ class SignUpOrLoginViewController: UIViewController {
     }
     
     @IBAction func goToSignupPageButton(_ sender: Any) {
-        let signupVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signupVC")as! SignupViewController
-        self.addChild(signupVC)
-        signupVC.view.frame = self.view.frame
-        self.view.addSubview(signupVC.view)
-        signupVC.didMove(toParent: self)
+        ProgramaticSegueways.segueTo(currentViewController: self, destinationViewController: "signupVC")
     }
     
     
     @IBAction func goToLoginPageButton(_ sender: Any) {
-        let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC")as! LoginViewController
-        self.addChild(loginVC)
-        loginVC.view.frame = self.view.frame
-        self.view.addSubview(loginVC.view)
-        loginVC.didMove(toParent: self)
+        ProgramaticSegueways.segueTo(currentViewController: self, destinationViewController: "loginVC")
     }
     
     

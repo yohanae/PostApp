@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		31D09CCABE7B55E74671EA66 /* libPods-PostApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD49D2A4339F04EBF52ACA6 /* libPods-PostApp.a */; };
+		BE05B22A22F1BC1500DEBF73 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B22922F1BC1400DEBF73 /* PostViewController.swift */; };
+		BE05B22C22F1BC4300DEBF73 /* ViewPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B22B22F1BC4300DEBF73 /* ViewPostsViewController.swift */; };
+		BE05B22E22F1BC9A00DEBF73 /* AllUsersPostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B22D22F1BC9A00DEBF73 /* AllUsersPostsCollectionViewCell.swift */; };
+		BE05B23022F1BD7100DEBF73 /* ProgramaticSegueways.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B22F22F1BD7100DEBF73 /* ProgramaticSegueways.swift */; };
+		BE05B23222F1C0C700DEBF73 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B23122F1C0C700DEBF73 /* User.swift */; };
+		BE05B23422F1C26E00DEBF73 /* UIImageViewExtensions .swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B23322F1C26E00DEBF73 /* UIImageViewExtensions .swift */; };
+		BE05B23622F1C4FA00DEBF73 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B23522F1C4FA00DEBF73 /* Alerts.swift */; };
+		BE05B23822F1C86200DEBF73 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05B23722F1C86200DEBF73 /* Posts.swift */; };
 		BE18C2BD22DDEE7F00944463 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18C2BC22DDEE7F00944463 /* ForgotPasswordViewController.swift */; };
 		BE2C3E1722DC9AB4007F4564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C3E1622DC9AB4007F4564 /* AppDelegate.swift */; };
 		BE2C3E1C22DC9AB4007F4564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2C3E1A22DC9AB4007F4564 /* Main.storyboard */; };
@@ -44,6 +52,14 @@
 		33312A3456EE5FB902B5B103 /* Pods-PostApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostApp.debug.xcconfig"; path = "Target Support Files/Pods-PostApp/Pods-PostApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3CD49D2A4339F04EBF52ACA6 /* libPods-PostApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PostApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49511F241A212A853306AB36 /* Pods-PostApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostApp.release.xcconfig"; path = "Target Support Files/Pods-PostApp/Pods-PostApp.release.xcconfig"; sourceTree = "<group>"; };
+		BE05B22922F1BC1400DEBF73 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		BE05B22B22F1BC4300DEBF73 /* ViewPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostsViewController.swift; sourceTree = "<group>"; };
+		BE05B22D22F1BC9A00DEBF73 /* AllUsersPostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersPostsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE05B22F22F1BD7100DEBF73 /* ProgramaticSegueways.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticSegueways.swift; sourceTree = "<group>"; };
+		BE05B23122F1C0C700DEBF73 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BE05B23322F1C26E00DEBF73 /* UIImageViewExtensions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageViewExtensions .swift"; sourceTree = "<group>"; };
+		BE05B23522F1C4FA00DEBF73 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		BE05B23722F1C86200DEBF73 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		BE18C2BC22DDEE7F00944463 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		BE2C3E1322DC9AB4007F4564 /* PostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2C3E1622DC9AB4007F4564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +166,11 @@
 		BE2C3E4722DC9BF2007F4564 /* Model  */ = {
 			isa = PBXGroup;
 			children = (
+				BE05B22F22F1BD7100DEBF73 /* ProgramaticSegueways.swift */,
+				BE05B23122F1C0C700DEBF73 /* User.swift */,
+				BE05B23322F1C26E00DEBF73 /* UIImageViewExtensions .swift */,
+				BE05B23522F1C4FA00DEBF73 /* Alerts.swift */,
+				BE05B23722F1C86200DEBF73 /* Posts.swift */,
 			);
 			path = "Model ";
 			sourceTree = "<group>";
@@ -162,6 +183,9 @@
 				BE2C3E4B22DC9D6D007F4564 /* LoginViewController.swift */,
 				BE18C2BC22DDEE7F00944463 /* ForgotPasswordViewController.swift */,
 				BE2C3E4F22DC9DC4007F4564 /* HomePageViewController.swift */,
+				BE05B22922F1BC1400DEBF73 /* PostViewController.swift */,
+				BE05B22B22F1BC4300DEBF73 /* ViewPostsViewController.swift */,
+				BE05B22D22F1BC9A00DEBF73 /* AllUsersPostsCollectionViewCell.swift */,
 			);
 			path = "View Controllers ";
 			sourceTree = "<group>";
@@ -341,12 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE05B22A22F1BC1500DEBF73 /* PostViewController.swift in Sources */,
 				BE2C3E4E22DC9D9C007F4564 /* SignupViewController.swift in Sources */,
 				BE18C2BD22DDEE7F00944463 /* ForgotPasswordViewController.swift in Sources */,
+				BE05B22E22F1BC9A00DEBF73 /* AllUsersPostsCollectionViewCell.swift in Sources */,
+				BE05B22C22F1BC4300DEBF73 /* ViewPostsViewController.swift in Sources */,
 				BE2C3E5022DC9DC4007F4564 /* HomePageViewController.swift in Sources */,
+				BE05B23422F1C26E00DEBF73 /* UIImageViewExtensions .swift in Sources */,
+				BE05B23822F1C86200DEBF73 /* Posts.swift in Sources */,
+				BE05B23022F1BD7100DEBF73 /* ProgramaticSegueways.swift in Sources */,
 				BE2C3E1F22DC9AB4007F4564 /* PostApp.xcdatamodeld in Sources */,
+				BE05B23222F1C0C700DEBF73 /* User.swift in Sources */,
 				BE2C3E4A22DC9CAE007F4564 /* SignUpOrLoginViewController.swift in Sources */,
 				BE2C3E4C22DC9D6D007F4564 /* LoginViewController.swift in Sources */,
+				BE05B23622F1C4FA00DEBF73 /* Alerts.swift in Sources */,
 				BE2C3E1722DC9AB4007F4564 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
